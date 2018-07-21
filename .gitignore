@@ -13,6 +13,7 @@ Thumbs.db
 # Jetbrains Ignore files #
 ##########################
 .idea/
+.pytest_cache/
 
 #######################
 # Python Ignore files #
