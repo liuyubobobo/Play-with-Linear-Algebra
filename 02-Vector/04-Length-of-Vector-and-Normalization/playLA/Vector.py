@@ -1,3 +1,6 @@
+import math
+from ._globals import EPSILON
+
 class Vector:
 
     def __init__(self, lst):
@@ -17,6 +20,14 @@ class Vector:
             "Error in subtracting. Length of vectors must be same."
 
         return Vector([a - b for a, b in zip(self, another)])
+
+    def norm(self):
+        return math.sqrt(sum(e**2 for e in self))
+
+    def normalize(self):
+        if self.norm() < EPSILON:
+            raise ZeroDivisionError("Normalize error! norm is zero.")
+        return Vector([e / self.norm() for e in self])
 
     def __mul__(self, k):
         return Vector([k * e for e in self])
