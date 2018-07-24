@@ -31,10 +31,3 @@ if __name__ == "__main__":
         print("Cannot normalize zero vector.")
     except:
         print("Unknown Error!")
-
-    print(vec.dot(vec2))
-    print(vec @ vec2)
-
-    e1 = Vector([0, 1])
-    e2 = Vector([1, 0])
-    print(e1 @ e2)

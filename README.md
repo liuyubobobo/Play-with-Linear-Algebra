@@ -27,14 +27,15 @@
 | 1-4 课程使用环境的搭建 | [Python](01-Introduction/04-Development-Enviroment-Setup/) |
 | **第二章 向量的世界** | [章节文件夹](02-Vector/) |
 | 2-1 什么是向量 | - |
-| 2-2 向量的两个基本运算 | - |
-| 2-3 实现属于我们自己的向量 | [Python](02-Vector/03-Implement-Our-Own-Vector/) |
-| 2-4 向量基本运算的性质与数学大厦的建立 | - |
-| 2-5 规范化和单位向量 | - |
-| 2-6 规范化的实现 | [Python](02-Vector/06-Normalization-Implementation/) |
-| 2-7 向量的点乘与几何意义 | - |
-| 2-8 向量点乘的实现 | [Python](02-Vector/08-Implementations-of-Dot-Product/) |
-| 2-9 向量点乘的基本应用 | - |
+| 2-2 实现属于我们自己的向量 | [Python](02-Vector/03-Implement-Our-Own-Vector/) |
+| 2-3 向量的两个基本运算 | - |
+| 2-4 实现向量的基本运算 | [Python](02-Vector/04-Implement-Vector-Operations/) |
+| 2-5 向量基本运算的性质与数学大厦的建立 | - |
+| 2-6 规范化和单位向量 | - |
+| 2-7 规范化的实现 | [Python](02-Vector/06-Normalization-Implementation/) |
+| 2-8 向量的点乘与几何意义 | - |
+| 2-9 向量点乘的实现 | [Python](02-Vector/08-Implementations-of-Dot-Product/) |
+| 2-10 向量点乘的基本应用 | - |
 | **第三章 矩阵不只是m\*n个数字** | [更新中，敬请期待] |
 | | |
 | **第四章 矩阵的应用** | [更新中，敬请期待] |
