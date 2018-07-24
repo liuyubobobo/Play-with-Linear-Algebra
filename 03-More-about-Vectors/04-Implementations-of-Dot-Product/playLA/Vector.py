@@ -1,10 +1,11 @@
 import math
 from ._globals import EPSILON
 
+
 class Vector:
 
     def __init__(self, lst):
-        self._values = lst
+        self._values = list(lst)
 
     def __add__(self, another):
         """向量加法，返回结果向量"""
@@ -29,6 +30,15 @@ class Vector:
         if self.norm() < EPSILON:
             raise ZeroDivisionError("Normalize error! norm is zero.")
         return Vector([e / self.norm() for e in self])
+
+    def dot(self, another):
+        """向量点乘，返回结果标量"""
+        assert len(self) == len(another), \
+            "Error in dot product. Length of vectors must be same."
+
+        return sum(a * b for a, b in zip(self, another))
+
+    __matmul__ = dot
 
     def __mul__(self, k):
         """返回数量乘法的结果向量：self * k"""

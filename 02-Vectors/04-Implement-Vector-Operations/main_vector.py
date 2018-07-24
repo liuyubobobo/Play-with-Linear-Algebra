@@ -16,18 +16,3 @@ if __name__ == "__main__":
 
     print("+{} = {}".format(vec, +vec))
     print("-{} = {}".format(vec, -vec))
-
-    print("norm({}) = {}".format(vec, vec.norm()))
-    print("norm({}) = {}".format(vec2, vec2.norm()))
-
-    print("normalize {} is {}".format(vec, vec.normalize()))
-    print("normalize {} is {}".format(vec2, vec2.normalize()))
-
-    print(vec.normalize().norm())
-    O = Vector([0., 0., 0.])
-    try:
-        O.normalize()
-    except ZeroDivisionError:
-        print("Cannot normalize zero vector.")
-    except:
-        print("Unknown Error!")

@@ -1,14 +1,17 @@
+import math
+from ._globals import EPSILON
+
+
 class Vector:
 
     def __init__(self, lst):
-        self._values = lst
+        self._values = list(lst)
 
     def __add__(self, another):
         """向量加法，返回结果向量"""
         assert len(self) == len(another), \
             "Error in adding. Length of vectors must be same."
 
-        # return Vector([a + b for a, b in zip(self._values, another._values)])
         return Vector([a + b for a, b in zip(self, another)])
 
     def __sub__(self, another):
@@ -17,6 +20,16 @@ class Vector:
             "Error in subtracting. Length of vectors must be same."
 
         return Vector([a - b for a, b in zip(self, another)])
+
+    def norm(self):
+        """返回向量的模"""
+        return math.sqrt(sum(e**2 for e in self))
+
+    def normalize(self):
+        """返回向量的单位向量"""
+        if self.norm() < EPSILON:
+            raise ZeroDivisionError("Normalize error! norm is zero.")
+        return Vector([e / self.norm() for e in self])
 
     def __mul__(self, k):
         """返回数量乘法的结果向量：self * k"""

@@ -24,13 +24,11 @@ if __name__ == "__main__":
     print("normalize {} is {}".format(vec2, vec2.normalize()))
 
     print(vec.normalize().norm())
-    O = Vector([0., 0., 0.])
+    O_vector = Vector([0., 0., 0.])
     try:
-        O.normalize()
+        O_vector.normalize()
     except ZeroDivisionError:
         print("Cannot normalize zero vector.")
-    except:
-        print("Unknown Error!")
 
     print(vec.dot(vec2))
     print(vec @ vec2)
