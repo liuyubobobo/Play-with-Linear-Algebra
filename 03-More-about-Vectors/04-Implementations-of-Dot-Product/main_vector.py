@@ -17,6 +17,10 @@ if __name__ == "__main__":
     print("+{} = {}".format(vec, +vec))
     print("-{} = {}".format(vec, -vec))
 
+    zero2 = Vector.zero(2)
+    print(zero2)
+    print("{} + {} = {}".format(vec, zero2, vec + zero2))
+
     print("norm({}) = {}".format(vec, vec.norm()))
     print("norm({}) = {}".format(vec2, vec2.norm()))
 
@@ -24,11 +28,11 @@ if __name__ == "__main__":
     print("normalize {} is {}".format(vec2, vec2.normalize()))
 
     print(vec.normalize().norm())
-    O_vector = Vector([0., 0., 0.])
+
     try:
-        O_vector.normalize()
+        zero2.normalize()
     except ZeroDivisionError:
-        print("Cannot normalize zero vector.")
+        print("Cannot normalize zero vector {}.".format(zero2))
 
     print(vec.dot(vec2))
     print(vec @ vec2)

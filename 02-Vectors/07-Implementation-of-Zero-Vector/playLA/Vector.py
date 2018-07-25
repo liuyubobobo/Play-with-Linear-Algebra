@@ -13,7 +13,6 @@ class Vector:
         assert len(self) == len(another), \
             "Error in adding. Length of vectors must be same."
 
-        # return Vector([a + b for a, b in zip(self._values, another._values)])
         return Vector([a + b for a, b in zip(self, another)])
 
     def __sub__(self, another):

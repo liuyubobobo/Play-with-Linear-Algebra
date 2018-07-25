@@ -7,6 +7,11 @@ class Vector:
     def __init__(self, lst):
         self._values = list(lst)
 
+    @classmethod
+    def zero(cls, dim):
+        """返回一个dim维的零向量"""
+        return cls([0] * dim)
+    
     def __add__(self, another):
         """向量加法，返回结果向量"""
         assert len(self) == len(another), \
