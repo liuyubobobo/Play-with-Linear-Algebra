@@ -27,11 +27,12 @@
 | 1-4 课程使用环境的搭建 | [Python](01-Introduction/04-Development-Enviroment-Setup/) |
 | **第二章 一切从向量开始** | [章节文件夹](02-Vectors/) |
 | 2-1 什么是向量 | - |
-| 2-2 实现属于我们自己的向量 | [Python](02-Vectors/03-Implement-Our-Own-Vector/) |
+| 2-2 实现属于我们自己的向量 | [Python](02-Vectors/02-Implement-Our-Own-Vector/) |
 | 2-3 向量的两个基本运算 | - |
 | 2-4 实现向量的基本运算 | [Python](02-Vectors/04-Implement-Vector-Operations/) |
 | 2-5 向量基本运算的性质与数学大厦的建立 | - |
-| 2-6 零向量 | [Python](02-Vectors/06-Zero-Vector/) |
+| 2-6 零向量 | - |
+| 2-7 零向量的实现和总结 | [Python](02-Vectors/07-Implementation-of-Zero-Vector/) |
 | **第三章 向量的高级话题与应用** | [章节文件夹](03-More-about-Vectors/) |
 | 3-1 规范化和单位向量 | - |
 | 3-2 规范化的实现 | [[Python](03-More-about-Vectors/02-Implementations-of-Dot-Product/)] |
