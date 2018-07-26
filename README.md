@@ -35,10 +35,10 @@
 | 2-7 零向量的实现和总结 | [Python](02-Vectors/07-Implementation-of-Zero-Vector/) |
 | **第三章 向量的高级话题与应用** | [章节文件夹](03-More-about-Vectors/) |
 | 3-1 规范化和单位向量 | - |
-| 3-2 规范化的实现 | [[Python](03-More-about-Vectors/02-Implementations-of-Dot-Product/)] |
+| 3-2 向量规范化的实现 | [[Python](03-More-about-Vectors/02-Implementations-of-Dot-Product/)] |
 | 3-3 向量的点乘与几何意义 | - |
 | 3-4 向量点乘的直观理解和实现 | [Python](03-More-about-Vectors/04-Implementation-of-Dot-Product/) |
-| 3-5 向量点乘的基本应用 | - |
+| 3-5 向量点乘的应用 | - |
 | 3-6 Numpy的基本使用 | [Python](03-More-about-Vectors/06-Using-Numpy/) |
 | **第四章 矩阵不只是m\*n个数字** | [更新中，敬请期待] |
 | | |
