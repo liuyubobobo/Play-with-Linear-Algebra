@@ -33,14 +33,14 @@
 | 2-5 实现向量的基本运算 | 实现 |[Python](02-Vectors/05-Implement-Vector-Operations/) |
 | 2-6 向量基本运算的性质与数学大厦的建立 | 原理 | - |
 | 2-7 零向量 | 原理 | - |
-| 2-8 实现零向量 | 实现 | [Python](02-Vectors/07-Implementation-of-Zero-Vector/) |
+| 2-8 实现零向量 | 实现 | [Python](02-Vectors/08-Implementation-of-Zero-Vector/) |
 | 2-9 小结：一切从向量出发 | 原理 | - |
 | **第三章 向量的高级话题与应用** | - | [章节文件夹](03-More-about-Vectors/) |
 | 3-1 规范化和单位向量 | 原理 | - |
-| 3-2 向量规范化的实现 | 实现 | [Python](03-More-about-Vectors/02-Implementations-of-Dot-Product/) |
+| 3-2 实现向量的规范化 | 实现 | [Python](03-More-about-Vectors/02-Normalization-Implementation/) |
 | 3-3 向量的点乘与几何意义 | 原理 | - |
 | 3-4 向量点乘的直观理解和实现 | 原理 | - |
-| 3-5 实现向量的点乘操作 | 实现 | [Python](03-More-about-Vectors/05-Implementation-of-Dot-Product/) |
+| 3-5 实现向量的点乘操作 | 实现 | [Python](03-More-about-Vectors/05-Implementations-of-Dot-Product/) |
 | 3-6 向量点乘的应用 | 原理 | - |
 | 3-7 Numpy中向量的基本使用 | 实现 | [Python](03-More-about-Vectors/07-Vectors-in-Numpy/) |
 | **第四章 矩阵不只是m\*n个数字** | - | [更新中，敬请期待] |
