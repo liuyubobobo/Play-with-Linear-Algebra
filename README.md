@@ -43,10 +43,17 @@
 | 3-5 实现向量的点乘操作 | 实现 | [Python](03-More-about-Vectors/05-Implementations-of-Dot-Product/) |
 | 3-6 向量点乘的应用 | 原理 | - |
 | 3-7 Numpy中向量的基本使用 | 实现 | [Python](03-More-about-Vectors/07-Vectors-in-Numpy/) |
-| **第四章 矩阵不只是m\*n个数字** | - | [04-The-Matrix/] |
+| **第四章 矩阵不只是m\*n个数字** | - | [章节文件夹](04-The-Matrix/) |
 | 4-1 什么是矩阵 | 原理 | - |
-| 4-2 矩阵的基本运算和基本性质 | 原理 | - |
-| 4-3 实现属于我们自己的矩阵类 | 实现 | [Python](04-The-Matrix/03-Vectors-in-Numpy/) |
+| 4-2 实现属于我们自己的矩阵类 | 实现 | [Python](04-The-Matrix/02-Implement-Our-Own-Matrix/) |
+| 4-3 矩阵的基本运算和基本性质 | 原理 | - |
+| 4-4 实现矩阵的基本运算 | 实现 | [Python](04-The-Matrix/04-Implement-Basic-Operations-of-Matrix/) |
+| 4-5 矩阵和向量的乘法 | 原理 | - |
+| 4-6 矩阵和矩阵的乘法及性质 | 原理 | - |
+| 4-7 实现矩阵的乘法 | 实现 | [Python] |
+| 4-8 矩阵的转置和矩阵的逆 | 原理 | - |
+| 4-9 矩阵的转置和矩阵逆的性质 | 原理 | - |
+| 4-10 实现矩阵的转置 | 实现 | [Python] | 
 | **第五章 矩阵的应用** | - | [更新中，敬请期待] |
 | | | |
 | **第六章 线性系统** | - | [更新中，敬请期待] |
