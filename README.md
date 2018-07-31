@@ -43,8 +43,10 @@
 | 3-5 实现向量的点乘操作 | 实现 | [Python](03-More-about-Vectors/05-Implementations-of-Dot-Product/) |
 | 3-6 向量点乘的应用 | 原理 | - |
 | 3-7 Numpy中向量的基本使用 | 实现 | [Python](03-More-about-Vectors/07-Vectors-in-Numpy/) |
-| **第四章 矩阵不只是m\*n个数字** | - | [更新中，敬请期待] |
-| | | |
+| **第四章 矩阵不只是m\*n个数字** | - | [04-The-Matrix/] |
+| 4-1 什么是矩阵 | 原理 | - |
+| 4-2 矩阵的基本运算和基本性质 | 原理 | - |
+| 4-3 实现属于我们自己的矩阵类 | 实现 | [Python](04-The-Matrix/03-Vectors-in-Numpy/) |
 | **第五章 矩阵的应用** | - | [更新中，敬请期待] |
 | | | |
 | **第六章 线性系统** | - | [更新中，敬请期待] |
