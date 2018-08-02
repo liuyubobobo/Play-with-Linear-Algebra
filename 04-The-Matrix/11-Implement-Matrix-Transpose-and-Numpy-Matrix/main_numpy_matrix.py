@@ -21,17 +21,12 @@ if __name__ == "__main__":
     print(A + B)
     print(A - B)
     print(10 * A)
+    print(A * 10)
     print(A * B)
     print(A.dot(B))
 
-    print(A + 1)
-
     p = np.array([10, 100])
     print(A + p)
-    print(A * p)
-    print(A.dot(p))
+    print(A + 1)
 
-    print(p.shape)
-    P = p.reshape(2, 1)
-    print(P.shape)
-    print(A.dot(P))
+    print(A.dot(p))
