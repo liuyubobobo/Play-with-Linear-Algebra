@@ -25,8 +25,15 @@ if __name__ == "__main__":
     # T = Matrix([[1, 0.5], [0, 1]])
     # T = Matrix([[1, 0], [0.5, 1]])
 
-    theta = math.pi / 3
-    T = Matrix([[math.cos(theta), math.sin(theta)], [-math.sin(theta), math.cos(theta)]])
+    # theta = math.pi / 3
+    # T = Matrix([[math.cos(theta), math.sin(theta)], [-math.sin(theta), math.cos(theta)]])
+
+    # 逆时针旋转90度
+    # theta = math.pi / -2
+    # T = Matrix([[math.cos(theta), math.sin(theta)], [-math.sin(theta), math.cos(theta)]])
+
+    # 根据矩阵表示空间的法则，直接写出的逆时针旋转90度的变换矩阵
+    T = Matrix([[0, -1], [1, 0]])
 
     P2 = T.dot(P.T())
     plt.plot([P2.col_vector(i)[0] for i in range(P2.col_num())],
