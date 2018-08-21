@@ -5,15 +5,15 @@ from playLA.LinearSystem import LinearSystem
 
 if __name__ == "__main__":
 
-    A1 = Matrix([[1, -3, 5], [2, -1, -3], [3, 1, 4]])
-    b1 = Vector([-9, 19, -13])
-    ls1 = LinearSystem(A1, b1)
-    ls1.gauss_jordan_elimination()
-    ls1.fancy_print()
+    A = Matrix([[1, 2, 4], [3, 7, 2], [2, 3, 3]])
+    b = Vector([7, -11, 1])
+    ls = LinearSystem(A, b)
+    ls.gauss_jordan_elimination()
+    ls.fancy_print()
     print()
 
-    A2 = Matrix([[1, 1, 1], [1, -1, -1], [2, 1, 5]])
-    b2 = Vector([3, -1, 8])
+    A2 = Matrix([[1, -3, 5], [2, -1, -3], [3, 1, 4]])
+    b2 = Vector([-9, 19, -13])
     ls2 = LinearSystem(A2, b2)
     ls2.gauss_jordan_elimination()
     ls2.fancy_print()
@@ -38,4 +38,11 @@ if __name__ == "__main__":
     ls5 = LinearSystem(A5, b5)
     ls5.gauss_jordan_elimination()
     ls5.fancy_print()
+    print()
+
+    A6 = Matrix([[1, 1, 1], [1, -1, -1], [2, 1, 5]])
+    b6 = Vector([3, -1, 8])
+    ls6 = LinearSystem(A6, b6)
+    ls6.gauss_jordan_elimination()
+    ls6.fancy_print()
     print()

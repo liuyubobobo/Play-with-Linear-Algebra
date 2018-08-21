@@ -4,17 +4,17 @@ from .Vector import Vector
 
 class LinearSystem:
 
-    def __init__(self, matrix, vector):
+    def __init__(self, A, b):
 
-        self._m = matrix.row_num()
-        self._n = matrix.col_num()
-        self.Ab = []
+        assert A.row_num() == len(b), "row number of A must be equal to the length of b"
+        self._m = A.row_num()
+        self._n = A.col_num()
+        assert self._m == self._n  # TODO: no this restriction
 
-        for i in range(self._m):
-            row = matrix.row_vector(i)
-            self.Ab.append(Vector(row.underlying_list() + [vector[i]]))
+        self.Ab = [Vector(A.row_vector(i).underlying_list() + [b[i]])
+                   for i in range(self._m)]
 
-    def _max_pivot(self, index, n):
+    def _max_row(self, index, n):
 
         best, ret = self.Ab[index][index], index
         for i in range(index + 1, n):
@@ -24,19 +24,20 @@ class LinearSystem:
 
     def _forward(self):
 
-        n = min(self._m, self._n)
+        n = self._m
         for i in range(n):
             # Ab[i][i]为主元
-            max_row = self._max_pivot(i, n)
+            max_row = self._max_row(i, n)
             self.Ab[i], self.Ab[max_row] = self.Ab[max_row], self.Ab[i]
 
-            self.Ab[i] = self.Ab[i] / self.Ab[i][i] # TODO self.Ab[i][i] == 0?
+            # 将主元归为一
+            self.Ab[i] = self.Ab[i] / self.Ab[i][i]  # TODO: self.Ab[i][i] == 0?
             for j in range(i + 1, n):
                 self.Ab[j] = self.Ab[j] - self.Ab[j][i] * self.Ab[i]
 
     def _backward(self):
 
-        n = min(self._m, self._n)
+        n = self._m
         for i in range(n - 1, -1, -1):
             # Ab[i][i]为主元
             for j in range(i - 1, -1, -1):
