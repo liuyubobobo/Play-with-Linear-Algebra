@@ -14,7 +14,7 @@ class LinearSystem:
 
         self.Ab = [Vector(A.row_vector(i).underlying_list() + [b[i]])
                    for i in range(self._m)]
-        self._pivots = []
+        self.pivots = []
 
     def _max_row(self, index_i, index_j, n):
 
@@ -26,36 +26,37 @@ class LinearSystem:
 
     def _forward(self):
 
-        i, j = 0, 0
-        while i < self._m and j < self._n:
-            max_row = self._max_row(i, j, self._m)
+        i, k = 0, 0
+        while i < self._m and k < self._n:
+            # 看Ab[i][k]位置是否可以是主元
+            max_row = self._max_row(i, k, self._m)
             self.Ab[i], self.Ab[max_row] = self.Ab[max_row], self.Ab[i]
 
-            if is_zero(self.Ab[i][j]):
-                j += 1
+            if is_zero(self.Ab[i][k]):
+                k += 1
             else:
                 # 将主元归为一
-                self.Ab[i] = self.Ab[i] / self.Ab[i][j]
-                for k in range(i + 1, self._m):
-                    self.Ab[k] = self.Ab[k] - self.Ab[k][j] * self.Ab[i]
-                self._pivots.append(j)
+                self.Ab[i] = self.Ab[i] / self.Ab[i][k]
+                for j in range(i + 1, self._m):
+                    self.Ab[j] = self.Ab[j] - self.Ab[j][k] * self.Ab[i]
+                self.pivots.append(k)
                 i += 1
 
     def _backward(self):
 
-        n = len(self._pivots)
+        n = len(self.pivots)
         for i in range(n - 1, -1, -1):
-            j = self._pivots[i]
-            # Ab[i][j]为主元
-            for k in range(i - 1, -1, -1):
-                self.Ab[k] = self.Ab[k] - self.Ab[k][j] * self.Ab[i]
+            k = self.pivots[i]
+            # Ab[i][k]为主元
+            for j in range(i - 1, -1, -1):
+                self.Ab[j] = self.Ab[j] - self.Ab[j][k] * self.Ab[i]
 
     def gauss_jordan_elimination(self):
         """如果有解，返回True；如果没有解，返回False"""
         self._forward()
         self._backward()
 
-        for i in range(len(self._pivots), self._m):
+        for i in range(len(self.pivots), self._m):
             if not is_zero(self.Ab[i][-1]):
                 return False
         return True
