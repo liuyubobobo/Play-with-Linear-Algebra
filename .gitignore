@@ -26,3 +26,5 @@ __pycache__/
 #################
 ppt/
 text-contents/
+.pdf
+.PDF
