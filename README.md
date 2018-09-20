@@ -78,13 +78,14 @@
 | 6-9 齐次线性方程组 | 原理 | - |
 | **第七章 初等矩阵和可逆性** | - | [章节文件夹](07-Elemental-Matrices-and-The-Properties-of-Inversion/) |
 | 7-1 线性系统与矩阵的逆 | 原理 | - |
-| 7-2 实现矩阵的逆的求解 | 实现 | [Python](07-Elemental-Matrices-and-The-Properties-of-Inversion/) |
+| 7-2 实现矩阵的逆的求解 | 实现 | [Python](07-Elemental-Matrices-and-The-Properties-of-Inversion/02-Implement-Inverse-of-Matrix/) |
 | 7-3 初等矩阵 | 原理 | - |
 | 7-4 从初等矩阵到矩阵的可逆性 | 原理 | - |
 | 7-5 为什么矩阵可逆这么重要 | 原理 | - |
 | 7-6 矩阵的LU分解 | 原理 | - |
-| 7-7 实现矩阵的LU分解 | 实现 | [Python] |
-| 7-8 Numpy中矩阵的LU分解 | 实现 | [Python] |
+| 7-7 实现矩阵的LU分解 | 实现 | [Python](07-Elemental-Matrices-and-The-Properties-of-Inversion/07-Implement-LU-Factorization/) |
+| 7-8 更多和LU分解相关的话题 | 原理 | - |
+| 7-9 Scipy中矩阵的LU分解 | 实现 | [Python] |
 | **第八章 线性相关，线性无关和生成空间** | - | [更新中，敬请期待] |
 | | | |
 | **第九章 正交性** | - | [更新中，敬请期待] |
@@ -116,4 +117,4 @@
 
 ---
 
-由于慕课网规定，课程不再提供PPT下载，请谅解。课程ppt转pdf水印版，将在慕课网课程内部系统中提供。
+**课程讲义的PDF版本不在github上提供**，大家可以在慕课网上 "下载 -> 查看讲师源码" 中各个章节文件夹下找到。
