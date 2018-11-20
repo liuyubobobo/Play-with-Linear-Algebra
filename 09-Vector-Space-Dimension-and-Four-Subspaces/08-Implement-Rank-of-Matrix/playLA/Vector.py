@@ -1,5 +1,5 @@
 import math
-from ._globals import is_zero
+from ._globals import is_zero, is_equal
 
 
 class Vector:
@@ -70,7 +70,9 @@ class Vector:
     def __eq__(self, other):
         """返回向量是否相等"""
         other_list = other.underlying_list();
-        return all(is_zero(x - y) for x, y in zip(self._values, other_list))
+        if(len(other_list) != len(self._values)):
+            return False
+        return all(is_equal(x, y) for x, y in zip(self._values, other_list))
 
     def __neq__(self, other):
         """返回向量是否不等"""

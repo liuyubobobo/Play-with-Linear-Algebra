@@ -81,6 +81,6 @@ if __name__ == "__main__":
     print(invA.dot(A))
     print()
 
-    print(rank(A8))
-    print(rank(A7))
-    print(rank(A6))
+    print("rank A8 = {}".format(rank(A8)))
+    print("rank A7 = {}".format(rank(A7)))
+    print("rank A6 = {}".format(rank(A6)))
