@@ -1,3 +1,4 @@
+from .Vector import Vector
 from .Matrix import Matrix
 from .LinearSystem import rank
 
