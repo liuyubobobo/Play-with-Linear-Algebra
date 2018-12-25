@@ -14,7 +14,7 @@ if __name__ == "__main__":
     print()
 
 
-    Sigma = np.zeros((A.shape[0], A.shape[1]))
+    Sigma = np.zeros(A.shape)
     for i in range(len(s)):
         Sigma[i][i] = s[i]
     print(Sigma)
