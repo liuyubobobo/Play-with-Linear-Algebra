@@ -72,3 +72,13 @@ if __name__ == "__main__":
         print("No Solution!")
     ls8.fancy_print()
     print()
+
+    A9 = Matrix([[2, 0, 1],
+                 [-1, -1, -2],
+                 [-3, 0, 1]])
+    b9 = Vector([1, 0, 0])
+    ls9 = LinearSystem(A9, b9)
+    if not ls9.gauss_jordan_elimination():
+        print("No Solution!")
+    ls9.fancy_print()
+    print()

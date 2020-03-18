@@ -14,12 +14,12 @@ class LinearSystem:
         self.Ab = [Vector(A.row_vector(i).underlying_list() + [b[i]])
                    for i in range(self._m)]
 
-    def _max_row(self, index, n):
+    def _max_row(self, index_i, index_j, n):
 
-        best, ret = self.Ab[index][index], index
-        for i in range(index + 1, n):
-            if self.Ab[i][index] > best:
-                best, ret = self.Ab[i][index], i
+        best, ret = abs(self.Ab[index_i][index_j]), index_i
+        for i in range(index_i + 1, n):
+            if abs(self.Ab[i][index_j]) > best:
+                best, ret = abs(self.Ab[i][index_j]), i
         return ret
 
     def _forward(self):

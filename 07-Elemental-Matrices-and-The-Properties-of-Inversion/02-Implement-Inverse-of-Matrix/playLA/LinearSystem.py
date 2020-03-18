@@ -21,10 +21,10 @@ class LinearSystem:
 
     def _max_row(self, index_i, index_j, n):
 
-        best, ret = self.Ab[index_i][index_j], index_i
+        best, ret = abs(self.Ab[index_i][index_j]), index_i
         for i in range(index_i + 1, n):
-            if self.Ab[i][index_j] > best:
-                best, ret = self.Ab[i][index_j], i
+            if abs(self.Ab[i][index_j]) > best:
+                best, ret = abs(self.Ab[i][index_j]), i
         return ret
 
     def _forward(self):
