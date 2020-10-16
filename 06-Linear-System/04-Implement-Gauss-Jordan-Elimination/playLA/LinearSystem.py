@@ -27,7 +27,7 @@ class LinearSystem:
         n = self._m
         for i in range(n):
             # Ab[i][i]为主元
-            max_row = self._max_row(i, n)
+            max_row = self._max_row(i, i, n)
             self.Ab[i], self.Ab[max_row] = self.Ab[max_row], self.Ab[i]
 
             # 将主元归为一
