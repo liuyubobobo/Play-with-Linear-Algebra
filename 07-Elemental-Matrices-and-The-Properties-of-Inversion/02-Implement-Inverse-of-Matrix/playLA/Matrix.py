@@ -107,6 +107,7 @@ class Matrix:
         return len(self._values), len(self._values[0])
 
     def __repr__(self):
-        return "Matrix({})".format(self._values)
+        row_strs = [", ".join(f"{e:.1f}" for e in row) for row in self._values]
+        return "Matrix([\n  {}\n])".format(",\n  ".join(row_strs))
 
     __str__ = __repr__
