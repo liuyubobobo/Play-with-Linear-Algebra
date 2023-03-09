@@ -64,11 +64,14 @@ class LinearSystem:
                 return False
         return True
 
-    def fancy_print(self):
+    def fancy_print(self, decimal_places=2):
 
         for i in range(self._m):
-            print(" ".join(str(self.Ab[i][j]) for j in range(self._n)), end=" ")
-            print("|", self.Ab[i][-1])
+            row = ["{}" for _ in range(self._n)]
+            for j in range(self._n):
+                row[j] = str(round(self.Ab[i][j], decimal_places))
+            print("  ".join(row), end="  ")
+            print("|  ", round(self.Ab[i][-1], decimal_places))
 
 
 def inv(A):
